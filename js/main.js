@@ -8,30 +8,30 @@ var TxtType = function (el, toRotate, period) {
   this.isDeleting = false;
 };
 TxtType.prototype.tick = function () {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-    if (this.isDeleting) {
-        delta /= 2;
-    }
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === "") {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-    }
-    setTimeout(function () {
-        that.tick();
-    }, delta);
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+  if (this.isDeleting) {
+    delta /= 2;
+  }
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === "") {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+  setTimeout(function () {
+    that.tick();
+  }, delta);
 };
 window.onload = function () {
   var elements = document.getElementsByClassName("typewrite");
@@ -53,4 +53,35 @@ window.addEventListener("scroll", function () {
   } else {
     navbar.classList.remove("scrolled");
   }
+});
+const backToTop = document.getElementById("backToTop");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
+  }
+});
+backToTop.addEventListener("click", () => {
+  document.getElementById("home").scrollIntoView({
+    behavior: "smooth",
+  });
+});
+document.querySelectorAll(".modal, .carousel").forEach((el) => {
+  el.addEventListener(
+    "show.bs.modal",
+    () => (backToTop.style.display = "none")
+  );
+  el.addEventListener(
+    "hidden.bs.modal",
+    () => (backToTop.style.display = "flex")
+  );
+  el.addEventListener(
+    "slide.bs.carousel",
+    () => (backToTop.style.display = "none")
+  );
+  el.addEventListener(
+    "slid.bs.carousel",
+    () => (backToTop.style.display = "flex")
+  );
 });

@@ -1,3 +1,45 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0078ff;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999;
+}
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+#backToTop i {
+    font-size: 20px;
+}
+.custom-fs{
+    font-size: 3rem;
+}
 .custom-gap {
     --bs-gutter-x: 6rem;
     --bs-gutter-y: 4rem;
@@ -166,8 +208,8 @@ nav.scrolled {
     background-color: #2f94ff;
 }
 /* -------------------services------------------------- */
-#services h2{
-font-size: 3rem;
+#services {
+    overflow-x: hidden;
 }
 #services .card-body i{
     font-size: 2rem;
@@ -184,7 +226,8 @@ font-size: 3rem;
     background-color: #2f94ff;
     border: .5rem solid #cde1f8;
 }
-#services .services-text::after{
+#services .services-text::after,
+#portfolio .portfolio-text::after{
     content: "";
     position: absolute;
     height: 5px;
@@ -193,7 +236,6 @@ font-size: 3rem;
     left: 48%;
     background-color: #2f94ff;
 }
-/* -----------------services total------------------------ */
 #services-total{
     background-image: url(../assets/imgi_13_counters-bg.jpg);
     background-attachment: fixed;
@@ -221,4 +263,93 @@ font-size: 3rem;
 }
 #services-total h4 {
 font-weight: 400;
+}
+/*--------------------portfolio-------------------------*/
+#portfolio .cards p{
+    font-size: .8rem;
+    color: #5e5e5e;
+}
+#portfolio .cards span{
+    color: #0078ff;
+}
+#portfolio .card i{
+    color: #0078ff;
+    width: 50px;
+    height: 50px;
+    border: 3.5px solid #0078ff;
+}
+#portfolio .card img {
+    width: 100%;
+    transition: all 1s;
+}
+#portfolio .card:hover img{
+    transform: scale(1.3);
+}
+#portfolio .shadow{
+box-shadow: 0 5px 3px -2px rgba(0, 0, 0, 0.1) !important;
+}
+/* modal edit */
+body.modal-open {
+    overflow: auto !important;
+    padding-right: 0 !important;
+}
+.modal-lg,
+.modal-xl {
+    --bs-modal-width: 950px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+}
+.carousel-control-prev {
+    left: -50px;
+}
+.carousel-control-next {
+    right: -50px;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 2rem;
+    color: #000;
+}
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.modal.show .modal-dialog {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: 10px;
+    }
+    .carousel-control-next {
+        right: 10px;
+    }
 }
