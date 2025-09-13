@@ -12,42 +12,43 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNavDropdown" data-bs-offset="70" tabindex="0">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-1 ">
-        <div class="container"> <a class="navbar-brand fw-medium" href="#">DevFolio</a> <button class="navbar-toggler"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span
-                    class="navbar-toggler-icon"></span> </button>
-            <div class="collapse navbar-collapse text-uppercase fs-6 fw-medium" id="navbarNavDropdown">
-                <ul class="navbar-nav fs ms-auto d-flex">
-                    <li class="nav-item"> <a class="nav-link px-0" aria-current="page" href="#home">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link px-0" href="#about">About</a> </li>
-                    <li class="nav-item"> <a class="nav-link px-0" href="#services">Services</a> </li>
-                    <li class="nav-item"> <a class="nav-link px-0" href="#work">Work</a> </li>
-                    <li class="nav-item"> <a class="nav-link px-0" href="#blog">Blog</a> </li>
-                    <li class="nav-item dropdown"> <a class="nav-link px-0 dropdown-toggle" href="#" role="button"
-                            aria-expanded="false"> Drop Down </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#DropDown1">Drop Down 1</a></li>
-                            <li>
-                            <li class="dropdown"> <a class="dropdown-item dropdown-toggle" href="#">More Options</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#DropDown2">Drop Down 2</a></li>
-                                    <li><a class="dropdown-item" href="#DropDown3">Drop Down 3</a></li>
-                                    <li><a class="dropdown-item" href="#DropDown4">Drop Down 4</a></li>
-                                </ul>
-                            </li>
-                    </li>
-                    <li><a class="dropdown-item" href="#DropDown2">Drop Down 2</a></li>
-                    <li><a class="dropdown-item" href="#DropDown3">Drop Down 3</a></li>
-                    <li><a class="dropdown-item" href="#DropDown4">Drop Down 4</a></li>
-                </ul>
-                </li>
-                <li class="nav-item"> <a class="nav-link px-0" href="#contact">Contact</a> </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- ------------------header---------------------- -->
     <header id="home" class="d-flex justify-content-center align-items-center">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-1 ">
+            <div class="container"> <a class="navbar-brand fw-medium" href="#">DevFolio</a> <button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span
+                        class="navbar-toggler-icon"></span> </button>
+                <div class="collapse navbar-collapse text-uppercase fs-6 fw-medium" id="navbarNavDropdown">
+                    <ul class="navbar-nav fs ms-auto d-flex">
+                        <li class="nav-item"> <a class="nav-link px-0" aria-current="page" href="#home">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link px-0" href="#about">About</a> </li>
+                        <li class="nav-item"> <a class="nav-link px-0" href="#services">Services</a> </li>
+                        <li class="nav-item"> <a class="nav-link px-0" href="#portfolio">Work</a> </li>
+                        <li class="nav-item"> <a class="nav-link px-0" href="#blog">Blog</a> </li>
+                        <li class="nav-item dropdown"> <a class="nav-link px-0 dropdown-toggle" href="#" role="button"
+                                aria-expanded="false"> Drop Down </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#DropDown1">Drop Down 1</a></li>
+                                <li>
+                                <li class="dropdown"> <a class="dropdown-item dropdown-toggle" href="#">More Options</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#DropDown2">Drop Down 2</a></li>
+                                        <li><a class="dropdown-item" href="#DropDown3">Drop Down 3</a></li>
+                                        <li><a class="dropdown-item" href="#DropDown4">Drop Down 4</a></li>
+                                    </ul>
+                                </li>
+                        </li>
+                        <li><a class="dropdown-item" href="#DropDown2">Drop Down 2</a></li>
+                        <li><a class="dropdown-item" href="#DropDown3">Drop Down 3</a></li>
+                        <li><a class="dropdown-item" href="#DropDown4">Drop Down 4</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link px-0" href="#contact">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="hero">
             <h1 class="text-light text-center pt-4 pb-2 fs-3">I am Morgan Freeman</h1>
             <div class="text-center fs-1 fw-medium py-1 fs-5">
@@ -60,7 +61,9 @@
             </div>
         </div>
     </header>
+    <!------------main--------------->
     <main>
+        <!--------------about section---------------->
         <section id="about" class="container py-5">
             <div class="card p-5 rounded-0 border-0 px-4 py-5">
                 <div class="d-flex flex-column flex-md-row gap-3">
@@ -147,15 +150,16 @@
                 </div>
             </div>
         </section>
-        <section id="services" class="container text-center position-relative">
-            <div class="services-text position-relative pb-1 mb-5">
+        <!--------------services section---------------->
+        <section id="services" class="text-center position-relative">
+            <div class="container services-text position-relative pb-1 mb-5">
                 <h2 class="fw-bold text-uppercase">Services</h2>
                 <p class="p-color">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="cards grid text-center">
+            <div class="container cards grid text-center">
                 <div class="row text-center">
                     <div class="col-12 col-md-6 col-lg-4 mb-4 ">
-                        <div class="card border-0 rounded-4 py-4">
+                        <div class="card border-0 shadow rounded-4 py-4">
                             <div class="card-body text-center">
                                 <div class="d-flex justify-content-center">
                                     <i class="fa-solid rounded-circle fa-bag-shopping rounded-circle"></i>
@@ -241,36 +245,41 @@
                 </div>
 
             </div>
-        </section>
-        <section id="services-total" class="d-flex justify-content-center align-items-center my-4">
-            <div class="cards d-flex row gap-5 container">
-                <div class="col text-light d-flex flex-column text-center justify-content-center align-items-center">
-                    <i
-                        class="fa-solid fa-check fs-4 rounded-circle d-flex justify-content-center align-items-center"></i>
-                    <span class="fs-2">450</span>
-                    <h4 class="fs-6">WORKS COMPLETED</h4>
-                </div>
-                <div class="col text-light d-flex flex-column text-center justify-content-center align-items-center">
-                    <i class="fa-solid fa-book fs-4 rounded-circle d-flex justify-content-center
-                        align-items-center"></i>
-                    <span class="fs-2">25</span>
-                    <h4 class="fs-6">YEARS OF EXPERIENCE</h4>
-                </div>
-                <div class="col text-light d-flex flex-column text-center justify-content-center align-items-center">
-                    <i
-                        class="fa-solid fa-users fs-4 rounded-circle d-flex justify-content-center align-items-center"></i>
-                    <span class="fs-2">550</span>
-                    <h4 class="fs-6">TOTAL CLIENTS</h4>
-                </div>
-                <div class="col text-light d-flex flex-column text-center justify-content-center align-items-center">
-                    <i
-                        class="fa-solid fa-award fs-4 rounded-circle d-flex justify-content-center align-items-center"></i>
-                    <span class="fs-2">48</span>
-                    <h4 class="fs-6">AWARD WON</h4>
+            <div id="services-total" class="d-flex justify-content-center align-items-center my-4">
+                <div class="cards row custom-gap">
+                    <div
+                        class="col-12 col-md-6 col-lg-3 text-light d-flex flex-column text-center justify-content-center align-items-center">
+                        <i
+                            class="fa-solid fa-check fs-4 rounded-circle d-flex justify-content-center align-items-center"></i>
+                        <span class="fs-2">450</span>
+                        <h4 class="fs-6">WORKS COMPLETED</h4>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 col-lg-3 text-light d-flex flex-column text-center justify-content-center align-items-center">
+                        <i
+                            class="fa-solid fa-book fs-4 rounded-circle d-flex justify-content-center align-items-center"></i>
+                        <span class="fs-2">25</span>
+                        <h4 class="fs-6">YEARS OF EXPERIENCE</h4>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 col-lg-3 text-light d-flex flex-column text-center justify-content-center align-items-center">
+                        <i
+                            class="fa-solid fa-users fs-4 rounded-circle d-flex justify-content-center align-items-center"></i>
+                        <span class="fs-2">550</span>
+                        <h4 class="fs-6">TOTAL CLIENTS</h4>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 col-lg-3 text-light d-flex flex-column text-center justify-content-center align-items-center">
+                        <i
+                            class="fa-solid fa-award fs-4 rounded-circle d-flex justify-content-center align-items-center"></i>
+                        <span class="fs-2">48</span>
+                        <h4 class="fs-6">AWARD WON</h4>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="work">...</section>
+        <!--------------portfolio section---------------->
+        <section id="portfolio">...</section>
         <section id="blog">...</section>
         <section id="contact">...</section>
     </main>

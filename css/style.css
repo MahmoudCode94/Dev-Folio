@@ -1,3 +1,7 @@
+.custom-gap {
+    --bs-gutter-x: 6rem;
+    --bs-gutter-y: 4rem;
+}
 .p-color{
 color: #5e5e5e;
 }
@@ -189,12 +193,13 @@ font-size: 3rem;
     left: 48%;
     background-color: #2f94ff;
 }
+/* -----------------services total------------------------ */
 #services-total{
     background-image: url(../assets/imgi_13_counters-bg.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    padding: 8rem 0;
+    padding: 7rem 0;
     position: relative;
     z-index: 1;
 }
