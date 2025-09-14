@@ -366,7 +366,8 @@ body {
 }
 
 #portfolio .portfolio-footer .carousel-item {
-    transition: transform 0.3s ease-in-out !important;
+    transition: transform 0.6s ease-in-out !important;
+    padding-bottom: 3rem;
 }
 
 #portfolio .portfolio-footer #carouselExampleIndicators{
@@ -487,5 +488,8 @@ background-color: #ffffffe5;
     }
     .carousel-control-next {
         right: 10px;
+    }
+    #portfolio .portfolio-footer .carousel-item {
+        padding-bottom: 1rem;
     }
 }
