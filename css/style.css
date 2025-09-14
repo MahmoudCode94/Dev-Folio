@@ -265,11 +265,11 @@ nav.scrolled {
 font-weight: 400;
 }
 /*--------------------portfolio-------------------------*/
-#portfolio .cards p{
+#portfolio .card p{
     font-size: .8rem;
     color: #5e5e5e;
 }
-#portfolio .cards span{
+#portfolio .card span{
     color: #0078ff;
 }
 #portfolio .card i{
