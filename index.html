@@ -56,15 +56,55 @@
             </div>
         </div>
     </div>
+    <!-- ==================togel modal========================= -->
+    <div class="modal fade" id="mobileMenuModal" tabindex="-1" aria-labelledby="mobileMenuModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body py-2 px-4">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#portfolio">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#blog">blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button">
+                                Drop Down
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#DropDown1">Deep Drop Down 1</a></li>
+                                <li><a class="dropdown-item" href="#DropDown2">Deep Drop Down 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ================= end modal ================= -->
     <!-------------------navbar------------------------>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-1 ">
-        <div class="container"> <a class="navbar-brand fw-medium" href="#">DevFolio</a> <button class="navbar-toggler"
-                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span
-                    class="navbar-toggler-icon"></span> </button>
+        <div class="container"> <a class="navbar-brand fw-medium" href="#">DevFolio</a> <button
+                class="navbar-toggler rounded-0 border-0" type="button" data-bs-toggle="modal"
+                data-bs-target="#mobileMenuModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse text-uppercase fs-6 fw-medium" id="navbarNavDropdown">
-                <ul class="navbar-nav fs ms-auto d-flex">
+                <ul class="navbar-nav ms-auto d-flex">
                     <li class="nav-item"> <a class="nav-link px-0" aria-current="page" href="#home">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link px-0" href="#about">About</a> </li>
                     <li class="nav-item"> <a class="nav-link px-0" href="#services">Services</a> </li>
