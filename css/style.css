@@ -177,7 +177,7 @@ body {
 }
 
 #home h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .typewrite>.wrap::after {
@@ -288,11 +288,10 @@ body {
     z-index: 1;
 }
 
-#services-total::after {
+#services-total::after{
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: #0078ff;
     opacity: 0.7;
     z-index: -1;
@@ -337,6 +336,69 @@ body {
 #portfolio .shadow {
     box-shadow: 0 5px 3px -2px rgba(0, 0, 0, 0.1) !important;
 }
+
+#portfolio .portfolio-footer{
+    height: 100vh;
+    background-image: url(../assets/imgi_14_overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 5rem 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#portfolio .portfolio-footer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #0078ff;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#portfolio .portfolio-footer button{
+    width: 12px;
+    height: 12px;
+}
+
+
+#portfolio .portfolio-footer .carousel-item {
+    transition: transform 0.3s ease-in-out !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------------------- Modals -------------------- */
 body.modal-open {
@@ -413,10 +475,14 @@ background-color: #ffffffe5;
     display: block;
 }
 #mobileMenuModal .navbar-nav {
-    gap: 0rem !important;
+    gap: .5rem !important;
 }
+
 /* -------------------- Media Queries -------------------- */
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) {
+    #home h1 {
+        font-size: 2rem;
+    }
     .carousel-control-prev {
         left: 10px;
     }
