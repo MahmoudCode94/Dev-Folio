@@ -346,7 +346,6 @@ body {
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    padding: 5rem 0;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -366,12 +365,13 @@ body {
     height: 12px;
 }
 
-
 #portfolio .portfolio-footer .carousel-item {
     transition: transform 0.3s ease-in-out !important;
 }
 
-
+#portfolio .portfolio-footer #carouselExampleIndicators{
+    min-height: 70%;
+}
 
 
 
