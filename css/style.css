@@ -109,6 +109,16 @@ nav.scrolled {
     transform: translateX(0);
 }
 
+.dropdown-toggle::after{
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0;
+    content: "";
+    border-top: none;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
 /* -------------------- Back To Top Button -------------------- */
 #backToTop {
     position: fixed;
@@ -473,16 +483,13 @@ body {
     border: 2.3px solid #0077ff65;
 }
 
+/* ----------footer------------- */
 
-
-
-
-
-
-
-
-
-
+footer{
+    background-color: #0062d3;
+    color: #fdfdfd;
+    padding: 30px 0;
+}
 
 
 
