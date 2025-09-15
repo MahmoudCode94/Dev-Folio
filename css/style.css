@@ -49,7 +49,7 @@ html{
     background-color: white;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
 .navbar .nav-link:hover::after,
@@ -270,7 +270,8 @@ body {
 }
 
 #services .services-text::after,
-#portfolio .portfolio-text::after {
+#portfolio .portfolio-text::after,
+#portfolio .blog-text::after {
     content: "";
     position: absolute;
     height: 5px;
@@ -374,18 +375,103 @@ body {
     width: 90% !important;
 }
 
+/* -------------------- Blog -------------------- */
 
+#blog .card span{
+    padding: 7px 18px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    position: relative;
+    bottom: 15px;
+}
 
+#blog .card .card-footer img{
+    width: 30px;
+}
 
+#blog .card .card-text a,
+#blog .card .card-footer a {
+    transition: all .2s linear;
+}
 
+#blog .card .card-text a:hover,
+#blog .card .card-footer a:hover{
+    color: #0078ff !important;
+}
 
+/* -------------------- contact -------------------- */
 
+#contact {
+    background-image: url(../assets/imgi_14_overlay-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 
+#contact::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #0078ff;
+    opacity: 0.7;
+    z-index: -1;
+}
 
+#contact .card-title{
+    font-size: 2rem;
+    position: relative;
+    width: fit-content;
+    padding-bottom: .5rem;
+}
 
+#contact .card-title::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+}
 
+#contact form input,
+#contact form textarea{
+    font-size: .6rem;
+}
 
+#contact form button{
+    width: fit-content;
+    margin: auto;
+    font-size: .75rem;
+}
 
+#contact ul.number li i{
+    color: #0078ff;
+    margin-right: 10px;
+}
+
+#contact ul.social li i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #444444;
+    width: 40px;
+    height: 40px;
+    border: 2.3px solid #444444;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+#contact ul.social li i:hover{
+    color: #fdfdfd;
+    background-color: #0078ff;
+    border: 2.3px solid #0077ff65;
+}
 
 
 
